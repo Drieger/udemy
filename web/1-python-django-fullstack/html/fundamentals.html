@@ -42,7 +42,7 @@
   </ul>
 
   <!-- Attributes -->
-  <a href="https://www.djangoproject.com/"><img src="img/django.png" alt="Django logo"></a>
+  <a href="https://www.djangoproject.com/"><img src="../img/django.png" alt="Django logo"></a>
 
   <!-- Tables -->
   <table>
@@ -77,5 +77,63 @@
   </table>
 
   <!-- Forms -->
+  <h3>Course Sign Up Page</h3>
+  <p>Please Note: First Name, Last Name, Password and Email are required</p>
+  <form action="" method="get">
+    <p>
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName" placeholder="First Name" required></input>
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" id="lastName" placeholder="Last Name" required></input>
+    </p>
+
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Email" required></input>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Password" required></input>
+    </p>
+
+    <p>
+      Are you over the age of 18?
+      <label for="radio-yes">Yes:</label>
+      <input type="radio" name="age" value="yes" id="radio-yes">
+      <label for="radio-no">No:</label>
+      <input type="radio" name="age" value="no" id="radio-no">
+    </p>
+
+    <p>
+      Do you have a Credit Card or PayPal?
+      <select name="payment">
+        <option value="cc">Credit Card</option>
+        <option value="pp">PayPal</option>
+      </select>
+    </p>
+
+    <input type="submit">
+  </form>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
