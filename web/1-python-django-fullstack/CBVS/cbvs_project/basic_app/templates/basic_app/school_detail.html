@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>School details</h1>
+    <h3>School Detail:</h3>
+    <p>Name: {{ school.name }}</p>
+    <p>Principal: {{ school.principal }}</p>
+    <p>Location: {{ school.location }}</p>
+    <h3>Students</h3>
+    <ul>
+        {% for student in school.students.all %}
+            <li>Name: {{student.name}} is {{student.age}} years old</li>
+        {% endfor %}
+
+    </ul>
+    <p><a class="btn btn-warning" href="{% url 'basic_app:update' pk=school.pk %}">Update</a></p>
+    <p><a class="btn btn-danger" href="{% url 'basic_app:delete' pk=school.pk %}">Delete</a></p>
+{% endblock content %}
+
+
